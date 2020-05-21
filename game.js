@@ -45,6 +45,7 @@ stg3.onclick = function open()
     mymove(s)
     s.addListener(mymove)
     alert("please choose the snake speed value");
+    this.style.display="none";
 }
 
 //creating the unit
