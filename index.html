@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Snake Game</title>
+        
+        <meta charset="utf-8" />
+	    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	    <link rel="stylesheet" type="text/css" href="game.css" />
+    </head>
+
+    <body>
+        <div id = "header"><h1 id="htext">Welcome to the SNAKE BATTLE GROUNDS!!</h1></div>
+
+        <img src="mimg.png" id="menu">
+
+        <canvas id="stage" ></canvas>
+        
+        <button id="startbutton">PLAY</button>
+
+        <div id="scorediv">
+            <p id="svalue">Your score</p>
+        </div>
+    
+        <div id="monitorbuttons">
+            <h3>snake speed rate</h3>
+            <select id="speedchanger">
+                <option>SELECT MODE</option>
+                <option value="100">Normal</option>
+                <option value="200">0.5X</option>
+                <option value="150">0.75X</option>
+                <option value="75">1.5X</option>
+                <option value="50">2X</option>
+            </select>
+            <button id="confirm" onclick="confirm()">GO</button>
+        </div>
+
+        <div id="moveb">
+        <button id="lb" onclick="lt()">L</button>
+        <button id="ub" onclick="ut()">U</button>
+        <button id="rb" onclick="rt()">R</button>
+        <button id="db" onclick="dt()">D</button>
+        </div>
+
+        <script src="game.js"></script>
+    </body>
+</html>
