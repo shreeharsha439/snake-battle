@@ -44,7 +44,7 @@ stg3.onclick = function open()
     var s = window.matchMedia("(max-width:600px)")
     mymove(s)
     s.addListener(mymove)
-    alert("please choose the mode of play");
+    alert("please choose the snake speed value");
 }
 
 //creating the unit
